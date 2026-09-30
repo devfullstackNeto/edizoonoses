@@ -1,0 +1,13 @@
+# Operação de campo — Sprint 3
+
+Este piloto técnico usa exclusivamente dados sintéticos. Entre em `http://localhost:8090` com uma conta demo autorizada. Em **Ocorrências**, crie uma ocorrência, pesquise endereço e selecione uma sugestão; se a busca não trouxer resultado, informe coordenadas. Em **Mapa & Hotspots**, clique no mapa para ajustar o ponto e associe à ocorrência. A fonte (`database-demo`, `nominatim` configurado ou `manual-map`) e as coordenadas ficam no PostgreSQL/PostGIS com evento de auditoria.
+
+Em **Croqui / Rotas**, selecione ocorrências, informe opcionalmente latitude e longitude de partida e salve. A ordem usa vizinho mais próximo. O módulo tenta OSRM quando `OSRM_BASE_URL` está configurado; caso contrário salva trechos e geometria geodésica local. O mapa diferencia a fonte do trajeto e exibe distâncias por trecho. Uma rota planejada pode ser reordenada; uma rota ativa mantém a ordem executada.
+
+Em **Modo Campo**, selecione e inicie a rota. Escolha a visita seguinte, abra o destino no mapa, obtenha a posição com permissão do navegador ou informe coordenadas. A chegada compara a distância ao raio configurável de 25–1000 m (padrão `GEOFENCE_RADIUS_M=100`). Fora do raio, o registro indica a distância e a visita permanece pendente; uma justificativa de pelo menos oito caracteres libera confirmação manual. Depois inicie a visita, anexe foto ou PDF, registre pendência e conclua com resultado e observação. A evidência é vinculada à visita/ocorrência e enviada ao OCR. Encerre a rota após as visitas.
+
+Estados de resultado: conforme; pendência identificada; endereço divergente; imóvel não encontrado; sem acesso; responsável ausente; requer revisita; encaminhado para análise. Pendências guardam título, severidade, prazo, responsável opcional, observação e estado. A API permite atualizar o estado da pendência.
+
+Check-ins guardam finalidade, ator, rota, visita, horário, precisão informada e, quando fornecidas, coordenadas. A Geolocation API só é chamada por ação do usuário ou por intervalo escolhido de 15, 30 ou 60 minutos enquanto a tela está aberta e a rota ativa. O padrão é desligado. A API rejeita check-ins fora de uma rota ativa. A retenção configurável (`LOCATION_RETENTION_DAYS`, padrão 30) remove registros expirados no próximo check-in. O histórico de localização requer papel de campo, é auditado e não aparece na resposta da ocorrência para viewer.
+
+Eventos de rota, visita, chegada, pendência, documento e OCR aparecem na timeline da ocorrência e na auditoria. O painel mostra métricas calculadas do banco. Para validar, execute `docker compose exec -T api pytest -q` e `cd apps/web && npm run e2e`.

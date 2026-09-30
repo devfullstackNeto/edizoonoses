@@ -1,0 +1,45 @@
+# Configuração local e segredos (preservar o modelo versionável)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+
+# Dependências, builds e caches
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Saídas de testes e arquivos locais
+test-results/
+playwright-report/
+*.log
+*.tmp
+*.bak
+*.orig
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+
+# Sistema operacional e editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp

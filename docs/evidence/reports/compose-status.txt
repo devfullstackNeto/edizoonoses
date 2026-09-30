@@ -1,0 +1,7 @@
+NAME                    IMAGE                                  COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+edi-zoonoses-api-1      edi-zoonoses-api                       "sh -c 'alembic upgr…"   api       36 minutes ago   Up 36 minutes (healthy)   0.0.0.0:8010->8000/tcp, [::]:8010->8000/tcp
+edi-zoonoses-db-1       mirror.gcr.io/postgis/postgis:16-3.4   "docker-entrypoint.s…"   db        6 hours ago      Up 6 hours (healthy)      5432/tcp
+edi-zoonoses-minio-1    bitnamilegacy/minio:2025.7.23          "/opt/bitnami/script…"   minio     6 hours ago      Up 6 hours (healthy)      0.0.0.0:9001->9001/tcp, [::]:9001->9001/tcp
+edi-zoonoses-redis-1    redis:7-alpine                         "docker-entrypoint.s…"   redis     6 hours ago      Up 6 hours (healthy)      6379/tcp
+edi-zoonoses-web-1      edi-zoonoses-web                       "/docker-entrypoint.…"   web       36 minutes ago   Up 36 minutes (healthy)   0.0.0.0:8090->80/tcp, [::]:8090->80/tcp
+edi-zoonoses-worker-1   edi-zoonoses-worker                    "rq worker ocr --url…"   worker    43 minutes ago   Up 43 minutes (healthy)   

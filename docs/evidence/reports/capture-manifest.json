@@ -1,0 +1,224 @@
+{
+  "captured_at": "2026-09-30T01:18:39.023Z",
+  "protocol": "DEMO-FD3CE1E508",
+  "occurrence_id": "656d8794-2e5a-4067-b3a1-012616ffe753",
+  "route_name": "Rota Evidência DEMO 1790731094634",
+  "screenshots": [
+    {
+      "id": "01",
+      "file": "screenshots/desktop/01_login.png",
+      "description": "Login com aviso de dados sintéticos",
+      "sha256": "c53194e2c42c6179ba424a8146c38bf085f72db66b42fb4d208b3431c26867b4"
+    },
+    {
+      "id": "02",
+      "file": "screenshots/desktop/02_dashboard.png",
+      "description": "Dashboard antes da jornada",
+      "sha256": "1d7afe3888f29c4fb5dbbf3d6903831bcf22dc7d9b341c14c6340af1221d9b28"
+    },
+    {
+      "id": "03",
+      "file": "screenshots/desktop/03_mapa_gis.png",
+      "description": "Mapa GIS com pontos sintéticos e territórios",
+      "sha256": "f7c3eefe48ec9f910ec6cb5eca0bed56a47d6f63cc06f787ed6fa7109aa916b8"
+    },
+    {
+      "id": "04",
+      "file": "screenshots/desktop/04_busca_endereco.png",
+      "description": "Sugestões reais da busca na seed",
+      "sha256": "50d5c256e95c44f643544b894758cfa408b96b2fe63f3c87e33378dfa13ca451"
+    },
+    {
+      "id": "05",
+      "file": "screenshots/desktop/05_correcao_manual_ponto.png",
+      "description": "Correção manual do marcador no Leaflet",
+      "sha256": "4f5d73658a36c914c163109bc067cb95c7fa661a84af4a52dc68133a2bb8d71c"
+    },
+    {
+      "id": "06",
+      "file": "screenshots/desktop/06_detalhe_ocorrencia.png",
+      "description": "Ocorrência DEMO com ponto georreferenciado",
+      "sha256": "34983f2e73922792ee1983a584d1575bfe5130e96db5045b0605ae3a1a5faf33"
+    },
+    {
+      "id": "07",
+      "file": "screenshots/desktop/07_criacao_rota.png",
+      "description": "Seleção de ocorrência e ponto de partida",
+      "sha256": "925695fc8e968e4b48a2e295e0f76b286569e3addeecff7c56fbe47b9c9347ac"
+    },
+    {
+      "id": "08",
+      "file": "screenshots/desktop/08_rota_desenhada.png",
+      "description": "Trajeto salvo, marcador de partida e fallback local",
+      "sha256": "3c1111a26ed92c43d223752c815e5eecb5e192231207918c5fbd1aa128d97a54"
+    },
+    {
+      "id": "01",
+      "file": "screenshots/mobile/01_mapa_mobile.png",
+      "description": "Mapa em viewport 390×844",
+      "sha256": "2d8c5e8321f95d6e54b19eae1f093e245ddb3eaa80282d72a8742ebf866878ea"
+    },
+    {
+      "id": "02",
+      "file": "screenshots/mobile/02_modo_campo_mobile.png",
+      "description": "Rota planejada no Modo Campo responsivo",
+      "sha256": "9f2c87afe91c34656423c0f99dd6807efef7eb9fe77e7dd38d5cc7ffe2cd9a46"
+    },
+    {
+      "id": "09",
+      "file": "screenshots/desktop/09_modo_campo.png",
+      "description": "Modo Campo com rota planejada",
+      "sha256": "7869f09f37d442eb7d72424f75ecdfdd88e2f4254176d02ea299699fa2e99ab1"
+    },
+    {
+      "id": "03",
+      "file": "screenshots/mobile/03_proximo_destino_mobile.png",
+      "description": "Próximo destino e endereço da rota ativa",
+      "sha256": "07c333383ab80fb56572c52b65380e4fa80c035151fa3026705c9ff16e3436ff"
+    },
+    {
+      "id": "10",
+      "file": "screenshots/desktop/10_checkin.png",
+      "description": "Check-in explícito durante rota ativa",
+      "sha256": "30447ece921d0dba3a17c33236fc42bf895e05830640190dd7b4fc87e29f0319"
+    },
+    {
+      "id": "04",
+      "file": "screenshots/mobile/04_checkin_mobile.png",
+      "description": "Geolocation API e check-in no viewport móvel",
+      "sha256": "c8d71c96c2cce96eb023781f727cdac14a59a0a5145fecdcb8d6624061852599"
+    },
+    {
+      "id": "11",
+      "file": "screenshots/desktop/11_geofence_fora_raio.png",
+      "description": "Geofence fora do raio esperado",
+      "sha256": "cf42db655689ceba6df17fea9054d8b2d12c38cf5a59d97f4a0fc860082a91f6"
+    },
+    {
+      "id": "05",
+      "file": "screenshots/mobile/05_geofence_mobile.png",
+      "description": "Aviso de geofence fora do raio no celular",
+      "sha256": "8b579934d2321571a3d0d3206d01f4f164e45518d014ffc34ba5580a00b9e5f3"
+    },
+    {
+      "id": "12",
+      "file": "screenshots/desktop/12_chegada_override.png",
+      "description": "Chegada confirmada com override justificado",
+      "sha256": "0bf271fe9440835ddc47914da3b519c0d51a6c499402cbc31064a43bde7ae141"
+    },
+    {
+      "id": "13",
+      "file": "screenshots/desktop/13_visita_andamento.png",
+      "description": "Visita iniciada com horário persistido",
+      "sha256": "eb5fe8ac81bff75a1b50f6b0a16c282505f1714b45dbc8c5a3148562b6229485"
+    },
+    {
+      "id": "06",
+      "file": "screenshots/mobile/06_visita_mobile.png",
+      "description": "Visita em andamento no celular",
+      "sha256": "75fa57764e6749f1779209f82e6201c19c021b2f11bbf55347892406919c7b7f"
+    },
+    {
+      "id": "14",
+      "file": "screenshots/desktop/14_resultado_visita.png",
+      "description": "Resultado e observação preparados na visita",
+      "sha256": "5f4ff0e3b7d9e3ce8baca74ee629d84ac100d9aa70067bde74df8f3cb5c0085f"
+    },
+    {
+      "id": "15",
+      "file": "screenshots/desktop/15_pendencia.png",
+      "description": "Pendência criada e vinculada à visita",
+      "sha256": "f3efd924810b2edec6d0a998f29f962460b2a3f328f2e7e868b1a5a68749a06a"
+    },
+    {
+      "id": "08",
+      "file": "screenshots/mobile/08_pendencia_mobile.png",
+      "description": "Pendência visível na visita móvel",
+      "sha256": "21eea13287ce4b2ee40e7675a1b6d924c2ce613ddf5b4f447f63ccceb29ce1a3"
+    },
+    {
+      "id": "16",
+      "file": "screenshots/desktop/16_captura_evidencia.png",
+      "description": "Prévia real do arquivo selecionado antes do envio",
+      "sha256": "e167ef3e984e25a2b363419be17bb5f9c6c86847a465799a2a5bc083096f74f0"
+    },
+    {
+      "id": "07",
+      "file": "screenshots/mobile/07_captura_foto_mobile.png",
+      "description": "Seleção de foto e prévia no celular",
+      "sha256": "77b6c9b781390d21a5a0e97728435dcfa6b3f00a71c565b16b7f55da73905d10"
+    },
+    {
+      "id": "17",
+      "file": "screenshots/desktop/17_documento_original.png",
+      "description": "Documento original servido pelo MinIO na revisão",
+      "sha256": "7381c6155cad22700407bf1f80614c03bb4439415aa730b5cf3196e57a6dce88"
+    },
+    {
+      "id": "18",
+      "file": "screenshots/desktop/18_ocr_executado.png",
+      "description": "Tesseract real com texto, confiança e campos",
+      "sha256": "03476a3e4b65fc17eb63585e6fd08052adc26c42ea058af4d3eff350337fbdad"
+    },
+    {
+      "id": "19",
+      "file": "screenshots/desktop/19_ocr_multipagina.png",
+      "description": "PDF real de duas páginas, com resultado da página 2",
+      "sha256": "8af051352a4e75dd89b1bd8c769279982c582541c25a3e67097ec7bb74876f44"
+    },
+    {
+      "id": "20",
+      "file": "screenshots/desktop/20_revisao_humana.png",
+      "description": "Correção e adição de campos antes da aprovação",
+      "sha256": "7ee4fd10719e68fe2f70bb1728694cf769de56491306873aab8a2c3d45b38850"
+    },
+    {
+      "id": "21",
+      "file": "screenshots/desktop/21_documento_aprovado.png",
+      "description": "OCR aprovado com campos revisados",
+      "sha256": "5a72ae2dbded37c285bb3f751f919f4b42a8a90594f7088713512a4f5359ca9c"
+    },
+    {
+      "id": "22",
+      "file": "screenshots/desktop/22_repositorio_eletronico.png",
+      "description": "Documento armazenado e pesquisável no repositório",
+      "sha256": "d0d013af467acc814834d41b8cefaf99af0d5d42617f20cea3712c28294e26b5"
+    },
+    {
+      "id": "23",
+      "file": "screenshots/desktop/23_chatbot.png",
+      "description": "Resposta do chatbot com fonte",
+      "sha256": "a0def6d0366a8ae2e7df2b37a19de6a7846628edae82facfaf12f090c81bb1df"
+    },
+    {
+      "id": "24",
+      "file": "screenshots/desktop/24_qualidade_dados.png",
+      "description": "Tela de regras e achados de qualidade",
+      "sha256": "355af89aa8083c5ffb7cb6697bcafa241efba9c6a9861936eda00062b9fc4665"
+    },
+    {
+      "id": "25",
+      "file": "screenshots/desktop/25_auditoria.png",
+      "description": "Auditoria após a execução da jornada",
+      "sha256": "18fbe2ad82dba48a33ddd3a29e5d4e9d98f44e7f1f19c9e6ecd9b01f79586ea6"
+    },
+    {
+      "id": "09",
+      "file": "screenshots/mobile/09_conclusao_mobile.png",
+      "description": "Visita concluída no fluxo móvel",
+      "sha256": "f032f73ad3d872d23bafc8dd63f28094737a909dcfdebbaaa7e660849adc2bdf"
+    },
+    {
+      "id": "26",
+      "file": "screenshots/desktop/26_timeline_ocorrencia.png",
+      "description": "Timeline operacional completa da ocorrência",
+      "sha256": "398c8bb4e2b2ac78db32366fcdd0ecddf9b9f59a36312d23e42e4774e17d86e7"
+    },
+    {
+      "id": "27",
+      "file": "screenshots/desktop/27_dashboard_apos_operacoes.png",
+      "description": "Indicadores de campo após visita e OCR",
+      "sha256": "706828b1fb8d409f4352b246286ec1f7f39e9d7dcf015857648359f317d96277"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+0004 (head)
+{"status":"ready","database":"postgis","redis":"ok","storage":"ok"}

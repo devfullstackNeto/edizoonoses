@@ -1,0 +1,20 @@
+openapi: 3.1.0
+info:
+  title: EDI Zoonoses API
+  version: 1.0.0
+paths:
+  /health/live:
+    get:
+      summary: Liveness
+      responses: {'200': {description: OK}}
+  /api/v1/occurrences:
+    get: {summary: List occurrences}
+    post: {summary: Create occurrence}
+  /api/v1/map/features:
+    get: {summary: GeoJSON features}
+  /api/v1/documents:
+    post: {summary: Upload document}
+  /api/v1/ocr/jobs:
+    post: {summary: Start OCR job}
+  /api/v1/chat/messages:
+    post: {summary: Send grounded chatbot message}
